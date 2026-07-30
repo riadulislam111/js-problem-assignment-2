@@ -6,12 +6,15 @@ function topRatedRestaurant(restaurants) {
     }
 
 let maxRating = restaurants[0];
+let oneRating = restaurants[0];
 
 for(let i = 1; i < restaurants.length; i++){
     if(restaurants[i].rating > maxRating.rating) {
         maxRating = restaurants[i];
-    } 
-  
+    }
+//   if(oneRating[0].rating <maxRating.rating){
+//     maxRating = oneRating[0]
+//   }
         
 
     return maxRating.name.toUpperCase();
